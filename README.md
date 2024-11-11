@@ -8,10 +8,13 @@ This project sets up continuous integration and deployment for a static website 
  1.Create an S3 Bucket
 - Go to the S3 console in AWS.
      Create a new bucket with a unique name (e.g., my-static-website-bucket).
+  
      ![image-1](https://github.com/user-attachments/assets/3ba707fa-f566-43a1-b97d-5c6a7e71577d)
      Upload a html file in my-static-website-bucket.
+  
      ![image2](https://github.com/user-attachments/assets/653ae35f-b709-4fbc-a59d-08033f4426ad)
      Enable "Static website hosting" in the properties of the bucket
+  
      ![image3](https://github.com/user-attachments/assets/9cf069ce-d9dd-47e2-940f-c7f82fe6f95f)
      Set the appropriate bucket policy to allow public read access to the content (adjust if using CloudFront signed URLs).
 
