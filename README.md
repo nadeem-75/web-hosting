@@ -11,24 +11,35 @@ This project sets up continuous integration and deployment for a static website 
 
      ![image-1](https://github.com/user-attachments/assets/3ba707fa-f566-43a1-b97d-5c6a7e71577d)
 
-    * Upload a html file in my-static-website-bucket.
+    - Upload a html file in my-static-website-bucket.
   
      ![image2](https://github.com/user-attachments/assets/653ae35f-b709-4fbc-a59d-08033f4426ad)
 
-     *Enable "Static website hosting" in the properties of the bucket
+     -Enable "Static website hosting" in the properties of the bucket
   
      ![image3](https://github.com/user-attachments/assets/9cf069ce-d9dd-47e2-940f-c7f82fe6f95f)
 
-     Set the appropriate bucket policy to allow public read access to the content (adjust if using CloudFront signed URLs).
+     - Set the appropriate bucket policy to allow public read access to the content (adjust if using CloudFront signed URLs).
 
      ![image5](https://github.com/user-attachments/assets/8f0966e3-210b-4c95-a89f-5be53be2e131)
  
 
-### 2. *Set Up CloudFront*
-   - In the CloudFront console, create a new CloudFront distribution.
-   - Set the origin to your S3 bucket.
+ 2. *Set Up CloudFront*
+  - In the CloudFront console, create a new CloudFront distribution.
+     
+   - ![image4](https://github.com/user-attachments/assets/68b3fb96-2d70-4b75-8e49-1b0a3e597dff)
+
+     - Set the origin to your S3 bucket.
+       
+     - ![image4](https://github.com/user-attachments/assets/992daa3a-4fd0-43de-92ae-320a86a49e5f)
+
+       
    - Configure the default cache behavior settings as needed.
-   - Note the CloudFront distribution URL for later steps.
+     
+   - Check the CloudFront distribution URL.
+     
+   - ![image7](https://github.com/user-attachments/assets/f92a21d0-3ca8-42f0-a5ee-abcad62365d1)
+
 
 ### 3. *Connect GitHub Repository to CodePipeline*
    - Go to the CodePipeline console.
