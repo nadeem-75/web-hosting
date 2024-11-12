@@ -27,11 +27,12 @@ This project sets up continuous integration and deployment for a static website 
  2. *Set Up CloudFront*
   - In the CloudFront console, create a new CloudFront distribution.
      
-   - ![image4](https://github.com/user-attachments/assets/68b3fb96-2d70-4b75-8e49-1b0a3e597dff)
+   - ![WhatsApp Image 2024-11-12 at 7 17 12 PM](https://github.com/user-attachments/assets/bb1eb1cf-ee1e-4588-8911-67a2c4bc2b3d)
+
 
      - Set the origin to your S3 bucket.
        
-     - ![image4](https://github.com/user-attachments/assets/992daa3a-4fd0-43de-92ae-320a86a49e5f)
+   - ![image4](https://github.com/user-attachments/assets/992daa3a-4fd0-43de-92ae-320a86a49e5f)
 
        
    - Configure the default cache behavior settings as needed.
