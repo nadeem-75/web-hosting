@@ -42,9 +42,16 @@ This project sets up continuous integration and deployment for a static website 
    - ![image7](https://github.com/user-attachments/assets/f92a21d0-3ca8-42f0-a5ee-abcad62365d1)
 
 
-### 3. *Connect GitHub Repository to CodePipeline*
+### 3. Connect GitHub Repository to CodePipeline
    - Go to the CodePipeline console.
+   
+   - ![image8](https://github.com/user-attachments/assets/30c799ab-d38b-4a03-9df7-f7d8011ded37)
+
    - Create a new pipeline and select GitHub as the source provider.
+   
+   - ![image9](https://github.com/user-attachments/assets/981c3a80-f238-4375-9167-eb6352cfb880)
+
+   - 
    - Authenticate with GitHub and select the repository and branch for the website.
    - Add an S3 bucket as the deployment destination.
 
