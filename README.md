@@ -58,27 +58,24 @@ This project sets up continuous integration and deployment for a static website 
 
    - Add an S3 bucket as the deployment destination.
 
-     ![image13](https://github.com/user-attachments/assets/e99fcb0c-f2bf-4472-9212-b555038b3298)
+     ![image14](https://github.com/user-attachments/assets/027004b6-aca6-455d-986d-e2f412b5ccf3)
 
-    
 
-### 4. *Configure CodeBuild (if needed)*
+### 4. Configure CodeBuild (if needed)
    - If your site requires a build step (e.g., npm build), configure CodeBuild in the pipeline.
    - Set up a buildspec.yml file in your repo to define build commands.
 
-### 5. *Add S3 as the Deployment Provider*
+  5. Add S3 as the Deployment Provider
    - In CodePipeline, add an S3 bucket as the deployment provider.
    - Point it to the previously created S3 bucket.
 
-### 6. *Deploy and Verify*
+   6. Deploy and Verify
    - Commit changes to the GitHub repository.
    - CodePipeline will automatically start and deploy the site to the S3 bucket.
    - Access the deployed website through the CloudFront distribution URL.
+     
+   ![Screenshot 2024-11-10 215943](https://github.com/user-attachments/assets/4f1e7de3-765d-4974-835f-030d7f48882e)
 
-## Notes
+
 - Ensure that appropriate permissions are set up for CodePipeline to access S3, GitHub, and CloudFront.
 - CloudFront caching may delay changes; you can invalidate the cache if needed.
-
----
-
-This guide should give users clear steps to replicate your setup! Adjust any specifics based on your project’s needs.
