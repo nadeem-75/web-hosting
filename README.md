@@ -27,33 +27,40 @@ This project sets up continuous integration and deployment for a static website 
  2. *Set Up CloudFront*
   - In the CloudFront console, create a new CloudFront distribution.
      
-   - ![WhatsApp Image 2024-11-12 at 7 17 12 PM](https://github.com/user-attachments/assets/bb1eb1cf-ee1e-4588-8911-67a2c4bc2b3d)
+     ![WhatsApp Image 2024-11-12 at 7 17 12 PM](https://github.com/user-attachments/assets/bb1eb1cf-ee1e-4588-8911-67a2c4bc2b3d)
 
 
      - Set the origin to your S3 bucket.
        
-   - ![image4](https://github.com/user-attachments/assets/992daa3a-4fd0-43de-92ae-320a86a49e5f)
+    ![image4](https://github.com/user-attachments/assets/992daa3a-4fd0-43de-92ae-320a86a49e5f)
 
        
    - Configure the default cache behavior settings as needed.
      
    - Check the CloudFront distribution URL.
      
-   - ![image7](https://github.com/user-attachments/assets/f92a21d0-3ca8-42f0-a5ee-abcad62365d1)
+     ![image7](https://github.com/user-attachments/assets/f92a21d0-3ca8-42f0-a5ee-abcad62365d1)
 
 
 ### 3. Connect GitHub Repository to CodePipeline
    - Go to the CodePipeline console.
    
-   - ![image8](https://github.com/user-attachments/assets/30c799ab-d38b-4a03-9df7-f7d8011ded37)
+     ![image8](https://github.com/user-attachments/assets/30c799ab-d38b-4a03-9df7-f7d8011ded37)
 
    - Create a new pipeline and select GitHub as the source provider.
    
-   - ![image9](https://github.com/user-attachments/assets/126ce83f-0a2f-4443-b326-dab2612c6397)
+     ![image9](https://github.com/user-attachments/assets/126ce83f-0a2f-4443-b326-dab2612c6397)
 
 
    - Authenticate with GitHub and select the repository and branch for the website.
+
+     ![image13](https://github.com/user-attachments/assets/c9311881-0940-4b89-acac-72ccacea43b3)
+
    - Add an S3 bucket as the deployment destination.
+
+     ![image13](https://github.com/user-attachments/assets/e99fcb0c-f2bf-4472-9212-b555038b3298)
+
+    
 
 ### 4. *Configure CodeBuild (if needed)*
    - If your site requires a build step (e.g., npm build), configure CodeBuild in the pipeline.
