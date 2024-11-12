@@ -49,9 +49,9 @@ This project sets up continuous integration and deployment for a static website 
 
    - Create a new pipeline and select GitHub as the source provider.
    
-   - ![image9](https://github.com/user-attachments/assets/981c3a80-f238-4375-9167-eb6352cfb880)
+   - ![image9](https://github.com/user-attachments/assets/126ce83f-0a2f-4443-b326-dab2612c6397)
 
-   - 
+
    - Authenticate with GitHub and select the repository and branch for the website.
    - Add an S3 bucket as the deployment destination.
 
