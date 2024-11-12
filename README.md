@@ -19,10 +19,6 @@ This project sets up continuous integration and deployment for a static website 
   
      ![image3](https://github.com/user-attachments/assets/9cf069ce-d9dd-47e2-940f-c7f82fe6f95f)
 
-     - Set the appropriate bucket policy to allow public read access to the content (adjust if using CloudFront signed URLs).
-
-     ![image5](https://github.com/user-attachments/assets/8f0966e3-210b-4c95-a89f-5be53be2e131)
- 
 
  2. *Set Up CloudFront*
   - In the CloudFront console, create a new CloudFront distribution.
@@ -36,6 +32,11 @@ This project sets up continuous integration and deployment for a static website 
 
        
    - Configure the default cache behavior settings as needed.
+
+      - Set the appropriate bucket policy to allow public read access to the content (adjust if using CloudFront signed URLs).
+
+     ![image5](https://github.com/user-attachments/assets/8f0966e3-210b-4c95-a89f-5be53be2e131)
+ 
      
    - Check the CloudFront distribution URL.
      
@@ -61,15 +62,12 @@ This project sets up continuous integration and deployment for a static website 
      ![image14](https://github.com/user-attachments/assets/027004b6-aca6-455d-986d-e2f412b5ccf3)
 
 
-### 4. Configure CodeBuild (if needed)
-   - If your site requires a build step (e.g., npm build), configure CodeBuild in the pipeline.
-   - Set up a buildspec.yml file in your repo to define build commands.
 
-  5. Add S3 as the Deployment Provider
+   4. Add S3 as the Deployment Provider
    - In CodePipeline, add an S3 bucket as the deployment provider.
    - Point it to the previously created S3 bucket.
 
-   6. Deploy and Verify
+   5. Deploy and Verify
    - Commit changes to the GitHub repository.
    - CodePipeline will automatically start and deploy the site to the S3 bucket.
    - Access the deployed website through the CloudFront distribution URL.
@@ -77,5 +75,4 @@ This project sets up continuous integration and deployment for a static website 
    ![Screenshot 2024-11-10 215943](https://github.com/user-attachments/assets/4f1e7de3-765d-4974-835f-030d7f48882e)
 
 
-- Ensure that appropriate permissions are set up for CodePipeline to access S3, GitHub, and CloudFront.
 - CloudFront caching may delay changes; you can invalidate the cache if needed.
