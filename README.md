@@ -1,4 +1,4 @@
-# Static Website Deployment with AWS CodePipeline, S3, and CloudFront
+# Static Webpage Deployment with AWS CodePipeline, S3, and CloudFront
 
 This project sets up continuous integration and deployment for a static website using AWS CodePipeline, S3 for storage, CloudFront as the CDN, and GitHub as the source repository.
 
